@@ -21,7 +21,7 @@ import javax.swing.Timer;
  * @authors Alex Helmrich, Ken He, Keenan Chiarieri, Harsh Shyamdasani
  * @date: 12/8/2023
  ***********************************************************************/
-public class FlappyBird implements ActionListener, MouseListener, KeyListener {
+public class FlappyBird implements ActionListener, MouseListener, KeyListener { //implements interfaces ActionListener, MouseListener, KeyListener
     public static FlappyBird flappyBird;
     public final int WIDTH = 800, HEIGHT = 800;
     public Renderer renderer;
@@ -56,7 +56,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener {
 
         timer.start();
     }
-    public void addColumn(boolean start) {
+    public void addColumn(boolean start) { // columns for game, new one appears after old one disappears
         int space = 300;
         int width = 100;
         int height = 50 + rand.nextInt(300);
@@ -75,7 +75,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener {
         g.fillRect(column.x,column.y,column.width,column.height);
     }
 
-    public void jump() {
+    public void jump() { // makes bird jump on click
         if (gameOver) {
             bird = new Rectangle(WIDTH / 2 - 10, HEIGHT / 2 - 10, 20, 20);
             columns.clear();
@@ -162,7 +162,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener {
         }
         renderer.repaint();
     }
-    public void repaint(Graphics g) {
+    public void repaint(Graphics g) { // sets colors for game
         g.setColor(Color.cyan);//set backround color
         g.fillRect(0,0, WIDTH, HEIGHT);
         g.setColor(Color.orange);//set ground color
@@ -189,7 +189,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener {
             g.drawString(String.valueOf(score), WIDTH / 2 - 25, 100);
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { //main method
         flappyBird = new FlappyBird();
     }
 
