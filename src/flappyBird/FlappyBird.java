@@ -70,7 +70,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener { 
         }
 
     }
-    public void paintColumn(Graphics g, Rectangle column){
+    public void paintColumn(Graphics g, Rectangle column){ //paint column
         g.setColor(Color.green.darker());
         g.fillRect(column.x,column.y,column.width,column.height);
     }
@@ -90,7 +90,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener { 
             gameOver = false;
         }
 
-        if (!started) {
+        if (!started) { //starts game
             started = true;
         }
         else if (!gameOver) {
@@ -101,7 +101,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener { 
         }
     }
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {  //updates column positions, game, and collisions
         int speed = 10;
         ticks++;
 
@@ -129,12 +129,12 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener { 
 
             bird.y += yMotion;
 
-            for (Rectangle column : columns) {
+            for (Rectangle column : columns) { //where columns are placed
                 if (column.y == 0 && bird.x + bird.width / 2 > column.x + column.width / 2 - 10 && bird.x + bird.width / 2 < column.x + column.width / 2 + 10) {
                     score ++;
                 }
 
-                if (column.intersects(bird)) {
+                if (column.intersects(bird)) { //if bird touches column
                     gameOver = true;
 
                     if (bird.x <= column.x) {
@@ -151,7 +151,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener { 
                 }
             }
 
-            if (bird.y > HEIGHT - 120 || bird.y < 0) {
+            if (bird.y > HEIGHT - 120 || bird.y < 0) { //bird doesn't touch ground or ceiling
                 gameOver = true;
             }
 
@@ -172,20 +172,20 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener { 
         g.setColor(Color.red); // set bird color
         g.fillRect(bird.x, bird.y, bird.width,bird.height);
 
-        for (Rectangle column : columns) {
+        for (Rectangle column : columns) { //paints column each time there is a column
             paintColumn(g, column);
         }
 
         g.setColor(Color.white);
         g.setFont(new Font("Arial", 1, 100));
 
-        if (!started) {
+        if (!started) { //start screen
             g.drawString("Click to start!", 75, HEIGHT / 2 - 50);
         }
-        if (gameOver) {
+        if (gameOver) { //end of game
             g.drawString("Game Over!", 100, HEIGHT / 2 - 50);
         }
-        if (!gameOver && started) {
+        if (!gameOver && started) { //show score
             g.drawString(String.valueOf(score), WIDTH / 2 - 25, 100);
         }
     }
