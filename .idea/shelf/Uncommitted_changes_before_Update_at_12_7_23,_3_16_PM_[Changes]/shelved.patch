@@ -1,0 +1,50 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"c1838fed-3e97-419b-9533-ba93756b7303\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/flappyBird/FlappyBird.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/flappyBird/FlappyBird.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 2\n}</component>\n  <component name=\"ProjectId\" id=\"2Yucr6VPKHGKQE1NY0SDpmgOjR1\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/alexhelmrich/IdeaProjects/PS4/src/Main.java&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"c1838fed-3e97-419b-9533-ba93756b7303\" name=\"Changes\" comment=\"\" />\n      <created>1701379103686</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1701379103686</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\n          <line>13</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d86c12de30e12ca8df028d08869de5faa996d88b)
++++ b/.idea/workspace.xml	(date 1701750858339)
+@@ -4,9 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="c1838fed-3e97-419b-9533-ba93756b7303" name="Changes" comment="">
++    <list default="true" id="c1838fed-3e97-419b-9533-ba93756b7303" name="Changes" comment="Third Commit,  code written by Alex. 17.00-31:35&#10;&#10;Set colors for back round, grass, dirt, and bird&#10;&#10;Wrote code for columns and methods for their appearance and disappearance">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/flappyBird/FlappyBird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flappyBird/FlappyBird.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -42,7 +41,28 @@
+       <option name="presentableId" value="Default" />
+       <updated>1701379103686</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Third Commit,  code written by Alex. 17.00-31:35&#10;&#10;Set colors for back round, grass, dirt, and bird&#10;&#10;Wrote code for columns and methods for their appearance and disappearance">
++      <option name="closed" value="true" />
++      <created>1701650745879</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1701650745879</updated>
++    </task>
++    <task id="LOCAL-00002" summary="Third Commit,  code written by Alex. 17.00-31:35&#10;&#10;Set colors for back round, grass, dirt, and bird&#10;&#10;Wrote code for columns and methods for their appearance and disappearance">
++      <option name="closed" value="true" />
++      <created>1701657876218</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1701657876218</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Third Commit,  code written by Alex. 17.00-31:35&#10;&#10;Set colors for back round, grass, dirt, and bird&#10;&#10;Wrote code for columns and methods for their appearance and disappearance" />
++    <option name="LAST_COMMIT_MESSAGE" value="Third Commit,  code written by Alex. 17.00-31:35&#10;&#10;Set colors for back round, grass, dirt, and bird&#10;&#10;Wrote code for columns and methods for their appearance and disappearance" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
