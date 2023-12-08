@@ -15,7 +15,12 @@ import java.util.Random;
 
 import javax.swing.JFrame;
 import javax.swing.Timer;
-
+/**********************************************************************
+ * @file FlappyBird.java
+ * @brief Implements game of Flappy Bird
+ * @authors Alex Helmrich, Ken He, Keenan Chiarieri, Harsh Shyamdasani
+ * @date: 12/8/2023
+ ***********************************************************************/
 public class FlappyBird implements ActionListener, MouseListener, KeyListener {
     public static FlappyBird flappyBird;
     public final int WIDTH = 800, HEIGHT = 800;
